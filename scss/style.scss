@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // background-image: url(https://marketplace.canva.com/EAD-Ck-LnP0/1/0/1600w/canva-arco%C3%ADris-gradiente-rosa-naranja-y-azul-fondo-virtual-para-zoom-VwJMC37j5jQ.jpg);
+}
+
+:root {
+    background: rgb(153,0,139);
+background: radial-gradient(circle, rgba(153,0,139,1) 0%, rgba(253,136,255,1) 100%);
+
+    .card {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 80px;
+
+        .styleCard {
+            background-color: white;
+            width: 326px;
+            height: 380px;
+            border-radius: 16px;
+
+            .headerCard {
+                height: 40%;
+                overflow: hidden;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+
+                .sizeImg {
+                    width: 326px;
+                    z-index: 1;
+                }
+            }
+
+            .cardBody {
+                display: flex;
+                justify-content: center;
+
+                .cardBodyImg {
+                    max-width: 100px;
+                    max-height: 100px;
+                    border-radius: 200%;
+                    border: 5px solid rgb(255, 255, 255);
+                    z-index: 10;
+                    position: relative;
+                    top: -50px;
+                }
+            }
+
+            .cardText {
+                position: relative;
+                top: -10%;
+                text-align: center;
+
+                .cardBodyTitle {
+                    font-size: 20px;
+                    .age {
+                        font-size: 20px;
+                        font-weight: normal;
+                    }
+                }
+            }
+            .line {
+                background-color: rgb(223, 219, 219);
+                border: 1px solid rgb(223, 219, 219);
+                position: relative;
+                top: -5%;
+            }
+            .cardFooter{
+                display: flex;
+                justify-content: space-around;
+
+                .styleData{
+                    font-weight: bold;
+                }
+            }
+            .footerData{
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                top: 1%;
+                .positionData1{
+                    position: relative;
+                    right: 2%;
+                }
+                .positionData2{
+                    position: relative;
+                    right: 2.5%;
+                }
+            }
+        }
+    }
+}
