@@ -6,62 +6,65 @@
 :root {
   background: #99008b;
   background: radial-gradient(circle, #99008b 0%, #fd88ff 100%); }
-  :root .card {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 80px; }
-    :root .card .styleCard {
-      background-color: white;
-      width: 326px;
-      height: 380px;
-      border-radius: 16px; }
-      :root .card .styleCard .headerCard {
-        height: 40%;
-        overflow: hidden;
-        border-top-left-radius: 16px;
-        border-top-right-radius: 16px; }
-        :root .card .styleCard .headerCard .sizeImg {
-          width: 326px;
-          z-index: 1; }
-      :root .card .styleCard .cardBody {
-        display: flex;
-        justify-content: center; }
-        :root .card .styleCard .cardBody .cardBodyImg {
-          max-width: 100px;
-          max-height: 100px;
-          border-radius: 200%;
-          border: 5px solid white;
-          z-index: 10;
-          position: relative;
-          top: -50px; }
-      :root .card .styleCard .cardText {
+
+.card {
+  width: 28%;
+  display: block;
+  justify-content: center;
+  background-color: white;
+  border-radius: 16px;
+  position: relative;
+  top: 80px;
+  left: 400px; }
+  .card .styleCard {
+    width: 326px;
+    height: 380px; }
+    .card .styleCard .headerCard {
+      height: 40%;
+      overflow: hidden;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px; }
+      .card .styleCard .headerCard .sizeImg {
+        width: 326px;
+        z-index: 1; }
+    .card .styleCard .cardBody {
+      display: flex;
+      justify-content: center; }
+      .card .styleCard .cardBody .cardBodyImg {
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 200%;
+        border: 5px solid white;
+        z-index: 10;
         position: relative;
-        top: -10%;
-        text-align: center; }
-        :root .card .styleCard .cardText .cardBodyTitle {
-          font-size: 20px; }
-          :root .card .styleCard .cardText .cardBodyTitle .age {
-            font-size: 20px;
-            font-weight: normal; }
-      :root .card .styleCard .line {
-        background-color: #dfdbdb;
-        border: 1px solid #dfdbdb;
+        top: -50px; }
+    .card .styleCard .cardText {
+      position: relative;
+      top: -10%;
+      text-align: center; }
+      .card .styleCard .cardText .cardBodyTitle {
+        font-size: 20px; }
+        .card .styleCard .cardText .cardBodyTitle .age {
+          font-size: 20px;
+          font-weight: normal; }
+    .card .styleCard .line {
+      background-color: #dfdbdb;
+      border: 1px solid #dfdbdb;
+      position: relative;
+      top: -5%; }
+    .card .styleCard .cardFooter {
+      display: flex;
+      justify-content: space-around; }
+      .card .styleCard .cardFooter .styleData {
+        font-weight: bold; }
+    .card .styleCard .footerData {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      top: 1%; }
+      .card .styleCard .footerData .positionData1 {
         position: relative;
-        top: -5%; }
-      :root .card .styleCard .cardFooter {
-        display: flex;
-        justify-content: space-around; }
-        :root .card .styleCard .cardFooter .styleData {
-          font-weight: bold; }
-      :root .card .styleCard .footerData {
-        display: flex;
-        justify-content: space-around;
+        right: 2%; }
+      .card .styleCard .footerData .positionData2 {
         position: relative;
-        top: 1%; }
-        :root .card .styleCard .footerData .positionData1 {
-          position: relative;
-          right: 2%; }
-        :root .card .styleCard .footerData .positionData2 {
-          position: relative;
-          right: 2.5%; }
+        right: 2.5%; }
