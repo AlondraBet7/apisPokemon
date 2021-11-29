@@ -1,3 +1,5 @@
+let usuario = prompt ("Inserte su nombre")
+
 console.log("Dale like al video y suscríbete ")
 
 
@@ -62,7 +64,7 @@ clone.querySelector(".cardBodyImg").setAttribute("src", pokemon.img)
 
 
 clone.querySelector(".cardBodyTitle").innerHTML = ` ${pokemon.nombre}
- <span>${pokemon.hp} hp</span>`
+ <span>${pokemon.hp} hp</span>  de  ${usuario}`
 
 
 clone.querySelector(".cardBodyText").textContent = pokemon.experiencia + " Exp"
@@ -80,3 +82,4 @@ fragment.appendChild(clone)
 flex.appendChild(fragment)
 
 }
+
